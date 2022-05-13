@@ -1,0 +1,93 @@
+.header-swiper{
+    width: 100%;
+    height: 100%;
+        .swiper {
+        width: 100%;
+        height: 100%;
+        }
+
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        }
+
+        .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        .swiper {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev{
+            color: #fff !important;
+            font-size: 22px !important;
+            padding: 18px;
+            border-radius: 25px;
+            opacity: .6;
+            font-weight: bold;
+            transition: all 0.5s ease-out 0s;
+            background: #000;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover{
+            opacity: 1;
+        }
+
+        :root{
+            --swiper-navigation-size: 22px;
+        }
+        .swiper-pagination{
+            top : 20%;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+        .swiper-pagination-bullet{
+            font-size: 15px;
+            background-color: transparent;
+                width: 100px;
+                color: rgb(111, 98, 98);
+            .abc{
+                width: 100%;
+                text-transform: capitalize;
+            }
+        }
+        .swiper-pagination-bullet-active{
+            .abc{
+                border-bottom: 1px solid black;
+
+                font-weight: bold;
+            }
+        }
+
+        body::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: linear-gradient(to top right, #000000, #000000bf);
+            border-radius: 5px;
+        }
+}

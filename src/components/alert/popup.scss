@@ -1,0 +1,73 @@
+.MuiPaper-root{
+    width: 95%;
+    height: 90%;
+    overflow-y: scroll!important ;
+    max-width: unset!important ;
+  }
+  .MuiPaper-root{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    
+  }
+  
+  .MuiPaper-root::-webkit-scrollbar {
+    width: 5px;
+  }
+  .MuiPaper-root::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+  }
+  
+  .MuiPaper-root::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-image: linear-gradient(180deg, #4d5253c4 0%, #48484b 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  }
+
+.popup-header{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+    // border: 1px solid black;
+    background-color: white;
+
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    .close-popup-button{
+        height: 50px;
+        width: 50px;
+        svg {
+            color: rgba(102, 101, 101, 0.87);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .MuiPaper-root{
+        
+        overflow-y: scroll!important ;
+        max-width: unset!important ;
+        max-height: unset;
+        width: 100%;
+        height: 95%;
+      }
+
+    .popup-header{
+        
+        padding: 0 10px;
+        padding-top: 10px;
+
+
+        .close-popup-button{
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    
+}

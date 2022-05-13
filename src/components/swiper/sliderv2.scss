@@ -1,0 +1,87 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+  
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      
+      color: #fff !important;
+      font-size: 22px !important;
+      padding: 25px;
+      padding-left: 27px;
+      border-radius: 25px;
+      opacity: 0.4;
+      font-weight: bold;
+      transition: all 0.5s ease-out 0s;
+      background: #000;
+    }
+    .swiper-button-prev{
+      left: 0px!important;
+    }
+  
+    .swiper-button-next{
+      right: 0px!important;
+    }
+  
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      opacity: 1;
+    }
+  
+    :root {
+      --swiper-navigation-size: 22px;
+    }
+  
+    
+    .swiper-pagination-bullet-active{
+      transform: unset;
+    }
+    .swiper-pagination{
+      bottom: 0px;
+    }
+    .swiper-wrapper {
+      height: 95%;
+    }
+    body::-webkit-scrollbar {
+      width: 7px;
+    }
+  
+    body::-webkit-scrollbar-thumb {
+      background: linear-gradient(to top right, #000000, #000000bf);
+      border-radius: 5px;
+    }
+  }
+  
+

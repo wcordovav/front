@@ -1,0 +1,113 @@
+
+.alert{
+    position: fixed;
+    top: 25%;
+    right: 0;
+    z-index: 99999;
+    width: 30%;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 20px;
+    margin-right: 10px;
+    align-items: center;
+}
+.alert--icon{
+    border-right: 2px solid rgb(82, 156, 195);
+    padding: 0 10px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+
+    svg{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+.inner{
+    padding-left: 20px;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.alert--svg{
+    width: 30px;
+    height: 30px;
+}
+
+.danger{
+    background-color: rgb(227, 153, 135);
+    color: #9b0101;
+    p{
+        color: #9b0101;
+    }
+
+    svg{
+        width: 50px;
+        color: #9b0101;
+    }
+    .alert--icon{
+        border-right: 2px solid #9b0101;
+    }
+}
+.info{
+    background-color: rgb(138, 224, 248);
+    color: #0c62aa;
+    p{
+        color: #0c62aa;
+    }
+    svg{
+        width: 50px;
+        color: #0c62aa;
+    }
+    .alert--icon{
+        border-right: 2px solid #0c62aa;
+    }
+}
+
+.success{
+    background-color: rgb(174, 241, 143);
+    color: #007a18;
+
+    p{
+        color: #007a18;
+    }
+
+    svg{
+        width: 50px;
+        color: #007a18;
+    }
+    .alert--icon{
+        border-right: 2px solid #007a18;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .alert{
+        width: 40%;
+        
+    }
+   .inner{
+        font-size: 1.5vw;
+   }
+}
+@media only screen and (max-width: 800px) {
+    .inner{
+        font-size: 2.4vw;
+    }
+    .alert{
+        width: 50%;
+    }
+   
+}
+@media only screen and (max-width: 500px) {
+    .alert{
+        width: 80%;
+    }
+    .inner{
+        font-size: 3.5vw;
+    }
+    
+    
+}

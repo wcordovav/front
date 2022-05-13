@@ -1,0 +1,109 @@
+div h1{
+    font-size: 60px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    color: #000;
+    word-wrap: break-word;
+    font-family: 'SamsungSharpSans',arial,sans-serif;
+    text-align: center;
+}
+
+div h2{
+    font-size: 24px;
+    line-height: 1.33;
+    font-family: 'SamsungSharpSans',arial,sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+div h3{
+    font-size: 24px;
+    line-height: 1.33;
+    font-family: 'SamsungSharpSans',arial,sans-serif;
+    text-align: center;
+}
+
+div h4{
+    font-size: 32px;
+    line-height: 1.33;
+    font-family: 'SamsungSharpSans',arial,sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.divMsj{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.divSocial{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+// .divRowImage{
+//     vertical-align: top;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+//     text-align: center;
+// }
+
+.divRowImage {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    gap: 40px;
+}
+
+.divItemImage img{
+    width: 90px;
+    height: 90px;
+}
+
+@media screen and (max-width:412px)  {
+    
+    div h1{
+        font-size: 40px;
+    }
+
+    div h2{
+        font-size: 18px;
+    }
+
+    div h3{
+        font-size: 18px;
+    }
+
+    div h4{
+        font-size: 24px;
+    }
+
+    .divRowImage{
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        display: block;
+    }
+
+    .divItemImage{
+        width: 50% !important;
+        padding: 10px;
+        
+        display: inline-block;
+        position: static;
+        height: 100%;
+        vertical-align: top;
+        text-align: center;
+    }
+
+    .divItemImage img{
+        width: 179px;
+        height: 179px;
+    }
+
+}

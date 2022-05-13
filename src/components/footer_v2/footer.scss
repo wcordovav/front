@@ -1,0 +1,301 @@
+
+.footer{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1500px;
+}
+
+
+.footer-top{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    // margin: 0 20px;
+}
+
+.footer-top-column{
+    border-right: 1px solid #ccc;
+    padding-bottom: 2.22222222vw;
+    
+}
+.footer-top-column:last-child{
+    border-right: 0px solid #ccc;
+    // background-color: beige;
+}
+
+.category-container{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.category-title{
+    h3{
+        font-size: 22px;
+        padding: 15px 20px;
+        text-align: left;
+        font-family: 'SamsungOne',arial,sans-serif;
+    }
+}
+
+.category-elements{
+    ul{
+        li{
+            a{
+                padding: 5px 25px;
+                font-size: 12px;
+                font-weight: normal;
+                display: block;
+            }
+            a:hover{
+                font-weight: bold;
+                text-decoration: underline;
+                color: rgb(35, 108, 235);
+            }
+        }
+    }
+}
+
+.copy-container{
+    border-bottom: 1px solid #d9d9d9;
+    min-height: 80px;
+    padding: 0px 15px ;
+    display: flex;
+    align-items: center;
+
+    span{
+        font-size: 16px;
+    }
+}
+
+.footer--bottom{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+.links--right{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 20px;
+    div{
+        margin-left: 15px;
+        span{
+            font-size: 15px;
+            display: flex;
+        }
+        
+        a{
+            width: 25px;
+            height: 25px;
+            display: block;
+            
+            svg{
+                width: 100%;
+                height: 100%;
+            }
+            svg:hover{
+                path{
+                    fill: rgb(27, 76, 174);
+                }
+            }
+        }
+
+    }
+    
+}
+
+.links--left{
+    display: flex;
+    div{
+        a{
+            padding: 0 15px;
+            font-size: 15px;
+            font-weight: normal;
+        }
+        a:hover{
+            font-weight: bold;
+        }
+        
+    }
+    div:first-child a{
+        border-right: 1px solid #d9d9d9;
+        font-weight: bolder;
+    }
+
+    
+}
+
+
+.footer-top-mobile{
+    border-top: 1px solid #ccc;
+}
+
+.category--mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    border-bottom: 1px solid #e7e7e7;
+    margin: 0 40px;
+    cursor: pointer;
+    h3{
+        font-size: 4.44444444vw;
+    }
+}
+
+.icon--foter{
+    width: 6.66666667vw;
+    height: 6.66666667vw;
+}
+
+.footer--mobile-submenu{
+    overflow: hidden;
+    position: static;
+    opacity: 0;
+    height: 0;
+    width: 100%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: height .4s cubic-bezier(0.4,0,0.2,1),opacity .4s cubic-bezier(0.4,0,0.2,1);
+    transition: height .4s cubic-bezier(0.4,0,0.2,1),opacity .4s cubic-bezier(0.4,0,0.2,1);
+}
+.footer--mobile-submenu-active{
+    visibility: visible;
+    opacity: 1;
+    // height: 100%;
+    transition: .4s;
+}
+
+.submenu-footer-items-li{
+    a{
+        font-size: 3.88888889vw;
+        line-height: 1.36;
+        padding: 2.77777778vw 7.77777778vw 3.05555556vw 8.88888889vw;
+        font-weight: normal;
+        display: block;
+    }
+    a:hover{
+        text-decoration: underline;
+        color: rgb(35, 108, 235);
+    }
+}
+
+.footer-bottom-mobile{
+    padding: 8.88888889vw 0vw 6.11111111vw 0vw;
+    .copyright-section{
+        padding: 0vw 6.66666667vw;
+
+        .mobile-copy{
+            padding-bottom: 10px;
+            .copyright-text{
+                font-size: 3.33333333vw;
+            }
+        }
+        .mobile-language{
+            padding: 10px 0;
+            a{
+                font-size: 3.33333333vw;
+                color: #000;
+                font-weight: 700;
+                padding-right: 5.55555556vw;
+            }
+        }
+    }
+
+    .mobile-links-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4vw;
+
+        .message{
+            font-size: 3.33333333vw;
+            padding-bottom: 4.44444444vw;
+        }
+
+        .social{
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 25px;
+            div{
+                    width: 6.66666667vw;
+                    height: 6.66666667vw;
+            }
+        }
+        .links{
+            width: 100%;
+            text-align: center;
+            
+            
+            a{
+                font-weight: normal;
+                // margin-right: 10px;
+                display: inline-block;
+                font-size: 3.33333333vw;
+                padding: 2.22222222vw 3.33333333vw;
+                line-height: 1.37;
+            }
+            a:hover{
+                font-weight: bold;
+            }
+        }
+    }
+}
+.footer-mb-icon{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 767px){
+    .category--mobile {
+        height: 15.55555556vw;
+        padding: 4.7vw 2vw;
+        font-size: 4.44444444vw;
+        margin: 0 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1700px) {
+    .category-elements{
+        ul{
+            li{
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .category-title{
+        h3{
+            font-size: 22px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 2000px) {
+    .category-elements{
+        ul{
+            li{
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .category-title{
+        h3{
+            font-size: 30px;
+        }
+    }
+}
+

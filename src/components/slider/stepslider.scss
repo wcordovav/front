@@ -1,0 +1,138 @@
+$transition-step : .3s;
+.step-slider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .dnone{
+        opacity: 0;
+        filter: blur(1.5rem);
+        display: none;
+    }
+    .dblock{
+        opacity: 1;
+        filter: blur(0);
+        // display: block;
+        transition: 1s;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    h3{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 2%;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+    }
+    .step-paginator{
+        
+        position: absolute;
+        top: 2%;
+
+        color: white;
+        // border: 1px solid white;
+        // padding: 20px;
+        // min-width: 300px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+
+        .step{
+            
+            cursor: pointer;
+            border-bottom: 1px solid rgb(188, 183, 183);
+            padding: 20px 50px;
+            transition: $transition-step;
+            svg{
+                border-radius: 25px;
+                box-shadow: 0 5px 15px rgba(5, 5, 5, 0.74);
+                scale: 0.8;
+                opacity: .7;
+            }
+            img{
+                box-shadow: 0 5px 15px rgba(5, 5, 5, 0.74);
+                border-radius: 26px;
+                opacity: .5;
+            }
+        }
+        .step-active{
+            border-bottom: 3px solid white;
+            transition: $transition-step;
+            svg{
+                scale: 1;
+                opacity: 1;
+            }
+            img{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .step-slider{
+        
+        img{
+            width: 100%;
+        }
+        h3{
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 2%;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+        }
+        .step-paginator{
+            
+            position: absolute;
+            top: 2%;
+    
+            color: white;
+            // min-width: 300px;
+            margin: 0 auto;
+    
+            display: flex;
+            flex-direction: row;
+    
+            .step{
+                
+                cursor: pointer;
+                border-bottom: 1px solid rgb(188, 183, 183);
+                padding: 10px 20px;
+                transition: $transition-step;
+                svg{
+                    border-radius: 25px;
+                    box-shadow: 0 5px 15px rgba(5, 5, 5, 0.74);
+                    scale: 0.8;
+                    opacity: .7;
+                }
+                img{
+                    box-shadow: 0 5px 15px rgba(5, 5, 5, 0.74);
+                    border-radius: 26px;
+                    opacity: .5;
+                }
+            }
+            .step-active{
+                border-bottom: 3px solid white;
+                transition: $transition-step;
+                svg{
+                    scale: 1;
+                    opacity: 1;
+                }
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

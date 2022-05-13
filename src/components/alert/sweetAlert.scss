@@ -1,0 +1,53 @@
+.alert-btn-acept{
+    background-color: #805ad5 ;
+    border-radius: .25rem ;
+    font-weight: 700 ;
+    padding-top: .5rem ;
+    padding-bottom: .5rem ;
+    padding-left: 1rem ;
+    padding-right: 1rem ;
+    color: #fff ;
+    min-width: 120px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.alert-btn-acept:hover{
+    background-color: #553c9a ;
+}
+
+.alert-btn-deny{
+    background-color: #f56565 ;
+    border-radius: .25rem ;
+    font-weight: 700 ;
+    padding-top: .5rem ;
+    padding-bottom: .5rem ;
+    padding-left: 1rem ;
+    padding-right: 1rem ;
+    color: #fff ;
+    min-width: 120px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.alert-btn-deny:hover{
+    background-color: #9b2c2c ;
+}
+
+.alert-btn-cancel{
+    background-color: #718096 ;
+    border-radius: .25rem ;
+    font-weight: 700 ;
+    padding-top: .5rem ;
+    padding-bottom: .5rem ;
+    padding-left: 1rem ;
+    padding-right: 1rem ;
+    color: #fff ;
+    min-width: 120px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.alert-btn-cancel:hover{
+    background-color: #2d3748 ;
+}
